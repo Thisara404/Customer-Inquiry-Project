@@ -3,6 +3,8 @@
 ## 📋 Project Overview
 This is a Laravel-based Customer Inquiry Management System that allows customers to submit inquiries and administrators to manage them through a web interface.
 
+![Home Page Overview](SS/Screenshot%20(1445).png)
+
 ## ✅ Prerequisites
 - **PHP** (version 8.1 or higher)
 - **Composer** (PHP dependency manager)
@@ -64,34 +66,34 @@ php artisan serve
 ```
 The application will be available at: `http://127.0.0.1:8000`
 
-## 🎯 Project Features
+## 🎯 Project Features & Screenshots
 
 ### 📄 Pages & Functionality
 
-1. **Home Page** (`/`)
-   - Modern responsive landing page
-   - Customer inquiry system overview
-   - Call-to-action buttons
+#### 1. **Home Page** (`/`)
+Modern responsive landing page with customer inquiry system overview and call-to-action buttons.
 
-2. **Create Inquiry** (`/inquiries/create`)
-   - Customer information form
-   - Message submission
-   - Form validation
+![Welcome Page](SS/Screenshot%20(1446).png)
 
-3. **View All Inquiries** (`/inquiries`)
-   - List all customer inquiries
-   - Search and filter options
-   - CRUD operations
+#### 2. **Create Inquiry** (`/inquiries/create`)
+Customer information form with message submission and form validation.
 
-4. **View Single Inquiry** (`/inquiries/{id}`)
-   - Detailed inquiry view
-   - Customer contact information
-   - Action buttons (Edit/Delete)
+![Create Inquiry Form](SS/Screenshot%20(1447).png)
 
-5. **Edit Inquiry** (`/inquiries/{id}/edit`)
-   - Update inquiry information
-   - Form validation
-   - Success notifications
+#### 3. **View All Inquiries** (`/inquiries`)
+List all customer inquiries with search, filter options, and CRUD operations.
+
+![All Inquiries List](SS/Screenshot%20(1448).png)
+
+#### 4. **View Single Inquiry** (`/inquiries/{id}`)
+Detailed inquiry view with customer contact information and action buttons (Edit/Delete).
+
+![Single Inquiry View](SS/Screenshot%20(1449).png)
+
+#### 5. **Edit Inquiry** (`/inquiries/{id}/edit`)
+Update inquiry information with form validation and success notifications.
+
+![Edit Inquiry](SS/Screenshot%202025-07-27%20094632.png)
 
 ## 🗃️ Database Schema
 
@@ -129,12 +131,14 @@ The application will be available at: `http://127.0.0.1:8000`
 
 ## 🎨 Design Features
 
-- **Modern UI**: Clean, professional interface
-- **Responsive Design**: Works on all devices
-- **Custom Styling**: Beautiful gradients and animations
-- **Form Validation**: Client and server-side validation
-- **Success Messages**: User feedback notifications
-- **Loading States**: Smooth transitions
+- **Modern UI**: Clean, professional interface with gradient backgrounds
+- **Responsive Design**: Works perfectly on all devices and screen sizes
+- **Custom Styling**: Beautiful gradients and smooth animations
+- **Form Validation**: Client and server-side validation with error messages
+- **Success Messages**: User feedback notifications for all actions
+- **Loading States**: Smooth transitions and hover effects
+- **Card-based Layout**: Clean card design for inquiry listings
+- **Mobile-First**: Optimized for mobile devices
 
 ## 🛠️ Development Commands
 
@@ -154,6 +158,26 @@ php artisan view:clear
 php artisan key:generate
 ```
 
+## 🎯 Key Functionality Highlights
+
+### ✨ **User Experience Features:**
+- **Intuitive Navigation**: Easy-to-use interface with clear navigation
+- **Real-time Feedback**: Instant validation and success messages
+- **Professional Design**: Modern gradient backgrounds with clean typography
+- **Responsive Layout**: Seamless experience across all devices
+
+### 🔧 **Technical Features:**
+- **Laravel Framework**: Built with Laravel 12.x for robust backend
+- **Custom CSS**: Hand-crafted styles with Inter font family
+- **Form Validation**: Comprehensive validation on both client and server side
+- **Database Integration**: MySQL database with proper migrations
+- **CRUD Operations**: Complete Create, Read, Update, Delete functionality
+
+### 📱 **Mobile Responsiveness:**
+- **Mobile-First Design**: Optimized for mobile devices
+- **Flexible Grid System**: Adapts to different screen sizes
+- **Touch-Friendly Interface**: Proper button sizes and spacing
+
 ## 📝 Contributing
 
 1. Fork the repository
@@ -171,6 +195,16 @@ If you encounter any issues:
 4. Check file permissions
 5. Review error logs in `storage/logs/`
 
+## 🌟 Project Highlights
+
+This Customer Inquiry System demonstrates:
+- **Professional Laravel Development**
+- **Modern UI/UX Design Principles**
+- **Responsive Web Development**
+- **Database Design and Management**
+- **Form Handling and Validation**
+- **CRUD Operations Implementation**
+
 ## 📄 License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
@@ -178,3 +212,12 @@ This project is open-sourced software licensed under the [MIT license](https://o
 ---
 
 **Made with ❤️ using Laravel Framework**
+
+### 🔗 **Live Demo**
+Visit the application at: `http://127.0.0.1:8000` after following the installation steps.
+
+### 👨‍💻 **Developer**
+Created by [Thisara404](https://github.com/Thisara404)
+
+---
+*Screenshots showcase the complete functionality and modern design of the Customer Inquiry Management System.*
