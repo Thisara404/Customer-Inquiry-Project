@@ -313,12 +313,9 @@
                             </svg>
                             Submit New Inquiry
                         </a>
-                        <a href="{{ route('inquiries.index') }}" class="btn btn-secondary">
+                       <a href="{{ route('inquiries.index') }}" class="btn btn-secondary">
                             <svg class="icon" viewBox="0 0 20 20">
-                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-                                <path fill-rule="evenodd"
-                                    d="M4 5a2 2 0 012-2v1a2 2 0 00-2 2v6a2 2 0 002 2v1a2 2 0 01-2-2V5zM14 5a2 2 0 012 2v6a2 2 0 01-2 2v1a2 2 0 002-2V7a2 2 0 00-2-2v-1z"
-                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
                             </svg>
                             View All Inquiries
                         </a>
