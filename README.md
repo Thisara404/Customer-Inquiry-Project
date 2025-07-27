@@ -3,7 +3,7 @@
 ## 📋 Project Overview
 This is a Laravel-based Customer Inquiry Management System that allows customers to submit inquiries and administrators to manage them through a web interface.
 
-![Home Page Overview](SS/Screenshot%20(1445).png)
+![Home Page Overview](SS/home.png)
 
 ## ✅ Prerequisites
 - **PHP** (version 8.1 or higher)
@@ -73,27 +73,32 @@ The application will be available at: `http://127.0.0.1:8000`
 #### 1. **Home Page** (`/`)
 Modern responsive landing page with customer inquiry system overview and call-to-action buttons.
 
-![Welcome Page](SS/Screenshot%20(1446).png)
+![Welcome Page](SS/home.png)
 
 #### 2. **Create Inquiry** (`/inquiries/create`)
 Customer information form with message submission and form validation.
 
-![Create Inquiry Form](SS/Screenshot%20(1447).png)
+![Create Inquiry Form](SS/submit%20new%20inquiry.png)
 
 #### 3. **View All Inquiries** (`/inquiries`)
 List all customer inquiries with search, filter options, and CRUD operations.
 
-![All Inquiries List](SS/Screenshot%20(1448).png)
+![All Inquiries List](SS/view%20all%20inquiries.png)
 
 #### 4. **View Single Inquiry** (`/inquiries/{id}`)
 Detailed inquiry view with customer contact information and action buttons (Edit/Delete).
 
-![Single Inquiry View](SS/Screenshot%20(1449).png)
+![Single Inquiry View](SS/inquiry%20details.png)
 
 #### 5. **Edit Inquiry** (`/inquiries/{id}/edit`)
 Update inquiry information with form validation and success notifications.
 
-![Edit Inquiry](SS/Screenshot%202025-07-27%20094632.png)
+![Edit Inquiry](SS/edit%20inquiry.png)
+
+#### 6. **Delete Inquiry Confirmation**
+Secure deletion process with confirmation dialog to prevent accidental data loss.
+
+![Delete Inquiry](SS/delete%20inquiry.png)
 
 ## 🗃️ Database Schema
 
@@ -189,9 +194,9 @@ php artisan key:generate
 ## 📞 Support
 
 If you encounter any issues:
-1. Check the Laravel documentation
+1. Check the Laravel documentation: https://laravel.com/docs
 2. Ensure all prerequisites are installed
-3. Verify database configuration
+3. Verify database configuration in [.env](customer-inquiries/.env)
 4. Check file permissions
 5. Review error logs in `storage/logs/`
 
@@ -204,6 +209,30 @@ This Customer Inquiry System demonstrates:
 - **Database Design and Management**
 - **Form Handling and Validation**
 - **CRUD Operations Implementation**
+
+## 📂 Project Structure
+
+```
+customer-inquiries/
+├── app/
+│   ├── Http/Controllers/
+│   │   └── InquiryController.php
+│   └── Models/
+│       └── Inquiry.php
+├── database/
+│   └── migrations/
+│       └── 2025_07_27_033003_create_inquiries_table.php
+├── resources/views/
+│   ├── welcome.blade.php
+│   └── inquiries/
+│       ├── index.blade.php
+│       ├── create.blade.php
+│       ├── show.blade.php
+│       └── edit.blade.php
+├── routes/
+│   └── web.php
+└── .env
+```
 
 ## 📄 License
 
