@@ -286,7 +286,8 @@
                 <!-- Hero Section -->
                 <div class="hero-section">
                     <h1>Manage Customer Inquiries Effortlessly</h1>
-                    <p>Streamline your customer communication with our powerful inquiry management system. Track, respond, and
+                    <p>Streamline your customer communication with our powerful inquiry management system. Track,
+                        respond, and
                         analyze customer requests with ease.</p>
 
                     <!-- Stats -->
@@ -309,13 +310,16 @@
                     <div class="action-buttons">
                         <a href="{{ route('inquiries.create') }}" class="btn btn-primary">
                             <svg class="icon" viewBox="0 0 20 20">
-                                <path d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
+                                <path
+                                    d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
                             </svg>
                             Submit New Inquiry
                         </a>
-                       <a href="{{ route('inquiries.index') }}" class="btn btn-secondary">
+                        <a href="{{ route('inquiries.index') }}" class="btn btn-secondary">
                             <svg class="icon" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/>
+                                <path fill-rule="evenodd"
+                                    d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                    clip-rule="evenodd" />
                             </svg>
                             View All Inquiries
                         </a>

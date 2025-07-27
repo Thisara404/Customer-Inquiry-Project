@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -20,7 +21,7 @@
             color: #333;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 600px;
             margin: 0 auto;
@@ -29,34 +30,34 @@
             padding: 40px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 30px;
         }
-        
+
         .header h1 {
             font-size: 2rem;
             font-weight: 700;
             color: #333;
             margin-bottom: 10px;
         }
-        
+
         .header p {
             color: #666;
         }
-        
+
         .form-group {
             margin-bottom: 20px;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
             color: #333;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -66,18 +67,18 @@
             font-size: 16px;
             transition: border-color 0.3s ease;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: #667eea;
         }
-        
+
         .form-group textarea {
             resize: vertical;
             min-height: 120px;
         }
-        
+
         .btn {
             background: #667eea;
             color: white;
@@ -90,12 +91,12 @@
             transition: all 0.3s ease;
             width: 100%;
         }
-        
+
         .btn:hover {
             background: #5a6fd8;
             transform: translateY(-2px);
         }
-        
+
         .back-link {
             display: inline-block;
             margin-bottom: 20px;
@@ -103,23 +104,23 @@
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         .back-link:hover {
             text-decoration: underline;
         }
-        
+
         .error {
             color: #e74c3c;
             font-size: 14px;
             margin-top: 5px;
         }
-        
+
         .alert {
             padding: 12px;
             border-radius: 8px;
             margin-bottom: 20px;
         }
-        
+
         .alert-error {
             background-color: #fee;
             border: 1px solid #fcc;
@@ -127,10 +128,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <a href="{{ route('inquiries.show', $inquiry->id) }}" class="back-link">← Back to Inquiry</a>
-        
+
         <div class="header">
             <h1>Edit Inquiry</h1>
             <p>Update the inquiry information below.</p>
@@ -149,7 +151,7 @@
         <form action="{{ route('inquiries.update', $inquiry->id) }}" method="POST">
             @csrf
             @method('PUT')
-            
+
             <div class="form-group">
                 <label for="name">Full Name *</label>
                 <input type="text" id="name" name="name" value="{{ old('name', $inquiry->name) }}" required>
@@ -160,7 +162,8 @@
 
             <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" value="{{ old('email', $inquiry->email) }}" required>
+                <input type="email" id="email" name="email" value="{{ old('email', $inquiry->email) }}"
+                    required>
                 @error('email')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -168,7 +171,8 @@
 
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" value="{{ old('phone', $inquiry->phone) }}" placeholder="(optional)">
+                <input type="text" id="phone" name="phone" value="{{ old('phone', $inquiry->phone) }}"
+                    placeholder="(optional)">
                 @error('phone')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -186,4 +190,5 @@
         </form>
     </div>
 </body>
+
 </html>
